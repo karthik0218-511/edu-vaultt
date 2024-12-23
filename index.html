@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduVault</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-bottom: 1px solid #21262d;
+    }
+
+    .header .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .header .nav-links a {
+      margin-left: 20px;
+      font-size: 16px;
+    }
+
+    .header .search-bar {
+      display: flex;
+      align-items: center;
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .header .search-bar input {
+      padding: 10px;
+      border: none;
+      background-color: transparent;
+      color: #c9d1d9;
+      outline: none;
+    }
+
+    .header .search-bar button {
+      padding: 10px 15px;
+      background-color: #238636;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+
+    .header .search-bar button:hover {
+      background-color: #2ea043;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      text-align: center;
+      padding: 100px 20px;
+      background-color: #0d1117;
+    }
+
+    .hero-section h1 {
+      font-size: 48px;
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .hero-section p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      color: #8b949e;
+    }
+
+    .hero-section .cta-button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #238636;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .hero-section .cta-button:hover {
+      background-color: #2ea043;
+    }
+
+    /* Courses Section */
+    .courses-section {
+      padding: 50px 20px;
+      background-color: #161b22;
+    }
+
+    .courses-section h2 {
+      font-size: 32px;
+      text-align: center;
+      color: white;
+      margin-bottom: 30px;
+    }
+
+    .courses {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .course-category {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      transition: transform 0.3s;
+    }
+
+    .course-category:hover {
+      transform: translateY(-5px);
+    }
+
+    .course-category h3 {
+      font-size: 20px;
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+
+    .course-category ul {
+      list-style: none;
+    }
+
+    .course-category ul li {
+      padding: 8px 0;
+      color: #c9d1d9;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">EduVault</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search courses">
+      <button>Search</button>
+    </div>
+    <div class="nav-links">
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <h1>Welcome to EduVault</h1>
+    <p>Your one-stop destination for engineering and non-engineering courses to boost your career.</p>
+    <button class="cta-button">Get Started</button>
+  </section>
+
+  <section id="courses" class="courses-section">
+    <h2>Our Courses</h2>
+    <div class="courses">
+      <div class="course-category">
+        <h3>Engineering Courses</h3>
+        <ul>
+          <li>Computer Science and Engineering (CSE)</li>
+          <li>Electrical Engineering (EE)</li>
+          <li>Mechanical Engineering (ME)</li>
+          <li>Aerospace Engineering (AE)</li>
+          <li>Artificial Intelligence and Machine Learning (AI/ML)</li>
+        </ul>
+      </div>
+      <div class="course-category">
+        <h3>Non-Engineering Courses</h3>
+        <ul>
+          <li>Bachelor of Computer Applications (BCA)</li>
+          <li>Bachelor of Business Administration (BBA)</li>
+          <li>Bachelor of Commerce (BCom)</li>
+          <li>Bachelor of Arts in Economics (BA Eco)</li>
+          <li>Bachelor of Science in Information Technology (BSc IT)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 EduVault. All rights reserved.</p>
+  </footer>
+</body>
+</html>
